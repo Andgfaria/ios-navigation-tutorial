@@ -8,6 +8,7 @@
 
 #import "LetraViewController.h"
 #import "LetraFactory.h"
+@import AVFoundation;
 
 @interface LetraViewController ()
 
@@ -65,5 +66,10 @@
 }
 
 - (IBAction)ouvirPalavra:(id)sender {
+    AVSpeechUtterance *speechUtterance = [[AVSpeechUtterance alloc] initWithString:letra.palavra];
+    speechUtterance.rate = AVSpeechUtteranceMinimumSpeechRate;
+    speechUtterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"pt-br"];
+    AVSpeechSynthesizer *synth = [[AVSpeechSynthesizer alloc] init];
+    [synth speakUtterance:speechUtterance];
 }
 @end
