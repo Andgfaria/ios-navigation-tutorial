@@ -52,6 +52,7 @@
 -(void) viewAnterior {
     if (self.navigationController.viewControllers.count <= 1) {
         LetraViewController *viewAnteriorDaAnterior = [[LetraViewController alloc] initWithLetra:[factory getLetra:letra.letra - 1]];
+    
         NSMutableArray *novoArray = [[NSMutableArray alloc] initWithObjects:viewAnteriorDaAnterior, self, nil];
         self.navigationController.viewControllers = novoArray;
     }
