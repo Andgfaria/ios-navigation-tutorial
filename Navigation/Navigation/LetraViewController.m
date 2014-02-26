@@ -29,6 +29,7 @@
     self = [super initWithNibName:@"LetraViewController" bundle:nil];
     if (self) {
         letra = l;
+        factory = [LetraFactory sharedInstance];
     }
     return self;
 }
@@ -49,13 +50,22 @@
 }
 
 -(void) viewAnterior {
+    if (self.navigationController.viewControllers.count <= 1) {
+        LetraViewController *viewAnteriorDaAnterior = [[LetraViewController alloc] initWithLetra:[factory getLetra:letra.letra - 1]];
+        NSMutableArray *novoArray = [[NSMutableArray alloc] initWithObjects:viewAnteriorDaAnterior, self, nil];
+        self.navigationController.viewControllers = novoArray;
+    }
     [self.navigationController popViewControllerAnimated:YES];
 }
 
 -(void) proximaView {
-    LetraFactory *factory = [LetraFactory sharedInstance];
     Letra *l = [factory getLetra:letra.letra + 1];
     LetraViewController *proxima = [[LetraViewController alloc] initWithLetra:l];
+    if (self.navigationController.viewControllers.count > 1) {
+        UIViewController *viewAnterior = self.navigationController.viewControllers.lastObject;
+        NSMutableArray *novoArray = [[NSMutableArray alloc] initWithObjects:viewAnterior, nil];
+        self.navigationController.viewControllers = novoArray;
+    }
     [self.navigationController pushViewController:proxima animated:YES];
 }
 

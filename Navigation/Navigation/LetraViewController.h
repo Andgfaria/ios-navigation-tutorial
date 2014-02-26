@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "Letra.h"
+#import "LetraFactory.h"
 
 @interface LetraViewController : UIViewController {
     Letra *letra;
+    LetraFactory *factory;
 }
 @property (weak, nonatomic) IBOutlet UILabel *txtLetra;
 @property (weak, nonatomic) IBOutlet UIImageView *imgPalavra;
