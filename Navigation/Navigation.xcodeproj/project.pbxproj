@@ -18,6 +18,7 @@
 		27156F6718B76AF50053A99C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27156F4C18B76AF50053A99C /* Foundation.framework */; };
 		27156F6818B76AF50053A99C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27156F5018B76AF50053A99C /* UIKit.framework */; };
 		27156F7218B76AF50053A99C /* NavigationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7118B76AF50053A99C /* NavigationTests.m */; };
+		651E49CB18BFABD500F8B995 /* imgJ.png in Resources */ = {isa = PBXBuildFile; fileRef = 651E49CA18BFABD500F8B995 /* imgJ.png */; };
 		653492E118BE5EBB00EA27C0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 653492E018BE5EBB00EA27C0 /* AVFoundation.framework */; };
 		657B6DC118BE6BF300CA3D00 /* imgA.png in Resources */ = {isa = PBXBuildFile; fileRef = 6585EA2118BD19D000E5DF6F /* imgA.png */; };
 		657B6DC218BE6BF700CA3D00 /* imgB.png in Resources */ = {isa = PBXBuildFile; fileRef = 6585EA2618BD25AF00E5DF6F /* imgB.png */; };
@@ -84,6 +85,7 @@
 		27156F6D18B76AF50053A99C /* NavigationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NavigationTests-Info.plist"; sourceTree = "<group>"; };
 		27156F6F18B76AF50053A99C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		27156F7118B76AF50053A99C /* NavigationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationTests.m; sourceTree = "<group>"; };
+		651E49CA18BFABD500F8B995 /* imgJ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imgJ.png; sourceTree = "<group>"; };
 		653492E018BE5EBB00EA27C0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		657B6E1D18BE7D0E00CA3D00 /* imgF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imgF.png; sourceTree = "<group>"; };
 		657B6E1F18BE7F9A00CA3D00 /* imgH.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imgH.png; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 		657B6DD118BE785200CA3D00 /* imagens */ = {
 			isa = PBXGroup;
 			children = (
+				651E49CA18BFABD500F8B995 /* imgJ.png */,
 				657B6E2518BE81EB00CA3D00 /* imgU.png */,
 				657B6E2318BE813700CA3D00 /* imgQ.png */,
 				657B6E2118BE809D00CA3D00 /* imgP.png */,
@@ -365,6 +368,7 @@
 				6585EA4118BD2ED800E5DF6F /* imgN.png in Resources */,
 				27156F5718B76AF50053A99C /* InfoPlist.strings in Resources */,
 				6585EA3818BD2ED800E5DF6F /* imgE.png in Resources */,
+				651E49CB18BFABD500F8B995 /* imgJ.png in Resources */,
 				6585EA3C18BD2ED800E5DF6F /* imgI.png in Resources */,
 				6585EA2B18BD26F100E5DF6F /* imgD.png in Resources */,
 				27156F5F18B76AF50053A99C /* Images.xcassets in Resources */,
